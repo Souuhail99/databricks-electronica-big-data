@@ -1,0 +1,28 @@
+# Do not commit Databricks authentication or local secrets
+.env
+.env.*
+!.env.example
+*.pem
+*.key
+*secret*
+*token*
+
+# Local tooling
+.vscode/
+.idea/
+__pycache__/
+.ipynb_checkpoints/
+
+# Datasets and exports: review authorization before sharing
+*.csv
+*.tsv
+*.parquet
+*.delta
+*.xlsx
+*.xls
+*.db
+*.sqlite
+
+# OS files
+.DS_Store
+Thumbs.db
